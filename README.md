@@ -1,3 +1,25 @@
 ## Vez's nvim config
 
 Except not really. All of it was made following ThePrimeagen's tutorial.
+
+## Installation
+- Install packer.nvim
+  On Linux distros:
+  ```
+  git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+  ```
+
+  On Windows:
+  ```
+  git clone https://github.com/wbthomason/packer.nvim "%LOCALAPPDATA%\nvim-data\site\pack\packer\start\packer.nvim"
+  ```
+- Clone the config file
+  On Linux:
+  ```
+  git clone https://github.com/vdsbt33/nvim-config.git ~/.config/nvim
+  ```
+  On Windows:
+  ```
+  git clone https://github.com/vdsbt33/nvim-config.git "%LOCALAPPDATA%\nvim"
+  ```

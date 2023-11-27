@@ -22,7 +22,8 @@ require('mason-lspconfig').setup({
       'rust_analyzer',
       'eslint',
       'gopls',
-      'lua_ls'
+      'lua_ls',
+      'html',
   },
   handlers = {
     lsp_zero.default_setup,

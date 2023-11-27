@@ -23,3 +23,7 @@ Except not really. All of it was made following ThePrimeagen's tutorial.
   ```
   git clone https://github.com/vdsbt33/nvim-config.git "%LOCALAPPDATA%\nvim"
   ```
+
+- Install the packages
+  Run `:PackerSync` on neovim. This will install all packages.
+  If you are on Windows, you will need to install a C Compiler (such as GCC or MinGW) before you can do that.

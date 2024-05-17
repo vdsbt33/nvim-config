@@ -18,12 +18,15 @@ end)
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {
-      'tsserver',
-      'rust_analyzer',
-      'eslint',
-      'gopls',
-      'lua_ls',
-      'html',
+      'gopls',       -- GoLang
+--    'tsserver',    -- Typescript
+--    'clangd',      -- C/C++
+      'lua_ls',      -- Lua
+      'omnisharp',   -- C#
+      'cssls',       -- CSS, LESS, SCSS
+--    'tailwindcss', -- Tailwind CSS
+--    'htmx',        -- Tailwind CSS
+--    'html',        -- requires node
   },
   handlers = {
     lsp_zero.default_setup,
@@ -31,6 +34,12 @@ require('mason-lspconfig').setup({
       local lua_opts = lsp_zero.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
+	tsserver = function()
+	  require('lspconfig').tsserver.setup({})
+	end,
+	omnisharp = function()
+	  require('lspconfig').omnisharp.setup({})
+	end,
   }
 })
 
